@@ -820,7 +820,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9',
 		ruleset: ['Standard 35 Pokes'],
 		unbanlist: [
-			'Abomasnow-Base', 'Altaria-Base', 'Ampharos-Base', 'Appletun', 'Arboliva', 'Avalugg-Base', 'Brambleghast', 'Dewgong', 'Dusknoir', 'Eelektross', 'Florges', 'Gastrodon', 'Golem-Base', 'Granbull', 'Grumpig', 'Hariyama', 'Hitmontop', 'Honchkrow', 'Klefki', 'Luvdisc', 'Lycanroc-Base', 'Maushold', 'Mimikyu-Base', 'Morpeko-Base', 'Oinkologne-Base', 'Primeape', 'Raticate-Base', 'Spidops', 'Spiritomb', 'Sudowoodo', 'Swalot', 'Tatsugiri-Curly', 'Tatsugiri-Droopy', 'Tatsugiri-Stretchy', 'Thwackey', 'Trapinch', 'Wyrdeer',
+			'Abomasnow-Base', 'Altaria-Base', 'Ampharos-Base', 'Appletun', 'Arboliva', 'Avalugg-Base', 'Brambleghast', 'Dewgong', 'Dusknoir', 'Eelektross-Base', 'Florges', 'Gastrodon', 'Golem-Base', 'Granbull', 'Grumpig', 'Hariyama', 'Hitmontop', 'Honchkrow', 'Klefki', 'Luvdisc', 'Lycanroc-Base', 'Maushold', 'Mimikyu-Base', 'Morpeko-Base', 'Oinkologne-Base', 'Primeape', 'Raticate-Base', 'Spidops', 'Spiritomb', 'Sudowoodo', 'Swalot', 'Tatsugiri-Curly', 'Tatsugiri-Droopy', 'Tatsugiri-Stretchy', 'Thwackey', 'Trapinch', 'Wyrdeer',
 		],
 	},
 	{
@@ -1786,7 +1786,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 			'#sandslashalola+icescales+mountaingale',
 			'#wigglytuff+sheerforce+moonblast',
 			'#poliwrath+drizzle+stealthrock',
-			'#alakazam+courtchange',
+			'#kadabra+courtchange',
 			'#muk+regenerator',
 			'#cloyster+snowwarning',
 			'#rapidash+orichalcumpulse',
@@ -1821,7 +1821,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 		banlist: ['Light Clay', 'Shell Smash', 'Belly Drum'],
 		unbanlist: [
-			'Aggron-Base', 'Alakazam-Base', 'Ampharos-Base', 'Armaldo', 'Azumarill', 'Cloyster', 'Diancie-Base', 'Donphan', 'Drampa-Base', 'Electivire', 'Electrode-Hisui', 'Empoleon', 'Exeggutor-Base', 'Houndoom-Base', 'Houndstone', 'Kabutops', 'Lickilicky', 'Meganium-Base', 'Mismagius', 'Muk-Base', 'Noivern', 'Palossand', 'Pangoro', 'Pinsir-Base', 'Poliwrath', 'Rabsca', 'Rapidash-Base', 'Sandslash-Alola', 'Sneasel-Base', 'Torterra', 'Toxicroak', 'Turtonator', 'Weezing-Galar', 'Wigglytuff', 'Yanmega',
+			'Aggron-Base', 'Kadabra', 'Ampharos-Base', 'Armaldo', 'Azumarill', 'Cloyster', 'Diancie-Base', 'Donphan', 'Drampa-Base', 'Electivire', 'Electrode-Hisui', 'Empoleon', 'Exeggutor-Base', 'Houndoom-Base', 'Houndstone', 'Kabutops', 'Lickilicky', 'Meganium-Base', 'Mismagius', 'Muk-Base', 'Noivern', 'Palossand', 'Pangoro', 'Pinsir-Base', 'Poliwrath', 'Rabsca', 'Rapidash-Base', 'Sandslash-Alola', 'Sneasel-Base', 'Torterra', 'Toxicroak', 'Turtonator', 'Weezing-Galar', 'Wigglytuff', 'Yanmega',
 		],
 	},
 
@@ -3054,6 +3054,28 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		validateTeam(team, options) {
 			return ['Not Implemented'];
 		},
+	},
+	{
+		name: "[Gen 9] Project NEO",
+		mod: 'neo',
+		validatorMod: 'gen9',
+		ruleset: [
+			'Standard 35 Pokes',
+
+			'#steelix-rockhead+clearbody+moonblast+diamondstorm',
+			'#wigglytuff+regenerator+hugepower',
+			'#lunatone-levitate+drizzle+baddreams+nightdaze+darkpulse+lunardance',
+			'#solrock-levitate+orichalcumpulse+vitalspirit',
+			'#hariyama-bellydrum+rapidspin',
+			'#walrein-bellydrum+slackoff'
+		],
+		banlist: [
+			'Light Clay',
+			'Ultranecrozium Z', 'Solganium Z', 'Lunalium Z', 'Mewnium Z', 'Marshadium Z',
+		],
+		unbanlist: [
+			'Walrein', 'Hariyama', 'Lunatone', 'Wigglytuff', 'Solrock', 'Steelix-Base',
+		],
 	},
 	{
 		name: "[Gen 9] Test",
